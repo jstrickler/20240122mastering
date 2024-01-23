@@ -4,6 +4,7 @@ print("Welcome to ticket sales\n")
 while True:  # Loop "forever"
     raw_quantity = input("Enter quantity to purchase (or q to quit): ")
     if raw_quantity == '':
+        print("Please enter the number of tickets")
         continue  # Skip rest of loop; start back at top
     if raw_quantity.lower() == 'q':
         print("goodbye!")
@@ -11,3 +12,5 @@ while True:  # Loop "forever"
 
     quantity = int(raw_quantity)  # could validate via try/except
     print("sending {} ticket(s)".format(quantity))
+
+print("All done")

@@ -16,3 +16,49 @@ print()
 data = ['\U0001F95A', '\U0001F414']  # answers the age-old question (at least for Python)
 print("unsorted:", data)
 print("sorted:", sorted(data))
+
+print("\U0001F92F")
+
+person = "Dua Lipa"
+
+p1 = person.upper()   # 
+print(person, p1)
+print(person.count('a'))
+print(person.count('l'))
+print(person.lower().count('l'))
+print(person.startswith('Dua'))
+print(person.startswith('Wombat'))
+print(person.removesuffix('pa'))
+print(len(person))
+
+print("Lip" in person)
+print(person.find("Lip"))
+print(person.find("Nose"))
+
+record = "fee#fi#fo#fum"
+fields = record.split('#')
+print(fields)
+
+phrase = "Happy\n     Valentine's \t    Day"
+fields = phrase.split()
+print(fields)
+
+s = "     Python is the best   "
+print("|" + s + "|")
+print("|" + s.lstrip() + "|")
+print("|" + s.rstrip() + "|")
+print("|" + s.strip() + "|")
+
+s = "xyxxyyxxxyyyPython yyy is xy xy xy the xxx bestxyyyyxxxxxyxyxyxxxxxxxxxxxxxxyy"
+print("|" + s + "|")
+print("|" + s.lstrip("xy") + "|")
+print("|" + s.rstrip("xy") + "|")
+print("|" + s.strip("xy") + "|")
+
+
+
+
+
+
+
+
