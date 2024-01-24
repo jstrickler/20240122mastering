@@ -1,3 +1,5 @@
+import psutil
+import os
 
 colors = ["red", "blue", "green", "yellow", "brown", "black"]
 months = (
@@ -27,3 +29,29 @@ print()
 
 for first_name, last_name in full_names:
     print("{} {}".format(first_name, last_name))
+
+proc = psutil.Process(os.getpid())
+
+print(proc.memory_full_info().rss)
+
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+print(a == b == c)
+print(a is b)   #  id(a) == id(b)
+print(a is c)
+print(id(a), id(b), id(c))
+
+j = 35
+k = 35
+print(j is k)
+name1 = "Bob"
+name2 = "Bob"
+print(name1 is name2)
+name1 = "Fred"
+print(name1 is name2)
+print(f"{name2 = }")
+
+
+
+

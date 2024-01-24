@@ -28,3 +28,9 @@ print('-' * 60)
 with open(FILE_NAME) as mary_in:
     lines_without_nl = mary_in.read().splitlines()  # splitlines() splits string on ' ' into lines
     print(lines_without_nl)
+print('-' * 60)
+
+with open(FILE_NAME) as mary_in:
+    first_line = mary_in.readline()
+    print(f"{first_line = }")
+    

@@ -1,0 +1,9 @@
+import logging
+
+logging.info("program starting")
+# .....
+# .....
+logging.warning("Your hair is warm")
+logging.critical("Your hair is on fire!")
+logging.debug("checking hair")
+

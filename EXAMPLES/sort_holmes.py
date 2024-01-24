@@ -16,7 +16,7 @@ def strip_article(title):  # create function which takes element to compare and 
     title = title.lower()
     for article in 'a ', 'an ', 'the ':
         if title.startswith(article):
-            title = title[len(article):]  # remove article by using a slice that starts after article + space`
+            title = title.removeprefix(article)
             break
     return title
 
