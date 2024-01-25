@@ -11,6 +11,7 @@ officia deserunt Y-45 mollit anim id est laborum"""
 
 rx_code = re.compile(r'(?P<letter>[A-Z])-(?P<number>\d{2,3})', re.I)
 
+#  s2 = re.sub(pattern, replacement, original_string)
 s2 = rx_code.sub("[REDACTED]", s) # replace pattern with string
 print(s2)
 print()

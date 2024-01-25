@@ -14,7 +14,7 @@ rx_code = re.compile(r'(?P<letter>[A-Z])-(?P<number>\d{2,3})', re.I)
 def update_code(m):  # callback function is passed each match object
     letter = m.group('letter').upper()
     number = int(m.group('number'))
-    return '{}:{:04d}'.format(letter, number)  # function returns replacement text
+    return f'{letter}:{number:04d}'  # function returns replacement text
 
 
 s2, count = rx_code.subn(update_code, s)  # sub takes callback function instead of replacement text

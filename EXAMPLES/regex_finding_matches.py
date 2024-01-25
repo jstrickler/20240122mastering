@@ -1,4 +1,3 @@
-
 import re
 
 s = """lorem ipsum M-302 dolor sit amet, consectetur r-99 adipiscing elit, sed do
@@ -27,3 +26,6 @@ print()
 
 matches = re.findall(pattern, s)  # return list of all matches
 print("matches:", matches)
+
+#  re.match(p, s)   ^pat
+# re.fullmatch(p, s) ^pat$

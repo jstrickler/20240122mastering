@@ -1,0 +1,105 @@
+
+pat       pat   pattern   spatter   repatriate
+
+p.t     pat pot p t    "keep to the right"  NOT  kept pterodactyl
+p[aeiou]t
+[0123456789][0123456789][0123456789]-[0123456789][0123456789]
+
+[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]
+
+abc[a-z0-9:]
+
+p[^aeiou]t   p t    p_t   pXt pAt   p;t   pmt plt  
+
+p\wt     pat pAt p9t p_t p0t 
+
+\w  [a-zA-Z0-9_]     \W  [^a-zA-Z0-9]
+\s  [ \t\n\r\f\b]    \S  [^ \t\n\r\f\b]
+\d  [0-9]            \D  [^0-9]
+
+#   . \w \W  \s \S \d \D    []
+
+p\.t   p[.]t
+
+pat  
+
+pa+t   pat  paat  paaaaaaaaaaaaaaaaaaaaaaaaat
+pa*t   pt pat paaat paaaaaaaaaaaaaaaaaaaaaaaaat
+
+p.*t   pfaoweijfatowiejfoawitejfoiawjeft UNIVERSAL MATCH
+p.*?t  shortest match
+
+pa?t   pt pat
+
+\d{3}-\d{2}-\d{4}  SSN
+
+{3}   exactly 3
+{3,}  3 or more
+{3, 5}  3 through 5 
+
+^spam      "spam is delicious"   "spammers ruin the Internet"
+
+toast$    "let's eat toast" 
+
+
+^\d+$    digits only
+^\s*\d+\s*$   digits plus optional leading/trailing whitespace
+
+^\w+$
+
+s = "the lathe was next to the bather's room, Mother"
+
+# replace "the" with "a"
+
+\bthe\b     \b  word boundary
+
+\bp.*g\b   "pining" "preying" "prestidigitating"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
