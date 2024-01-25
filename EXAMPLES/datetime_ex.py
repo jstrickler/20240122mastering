@@ -26,4 +26,14 @@ d3 = d2 - d1  # date objects can be subtracted from other date objects
 
 print("raw time delta:", d3)
 print("time delta days:", d3.days)  # timedelta has days, seconds, and microseconds
+print()
+
+print(f"{d3.days = }")
+print(f"{d3.seconds = }")
+print(f"{d3.resolution = }")
+print(f"{d3.total_seconds() = }")
+print(f"{d3.microseconds = }")
+print(f"{d3.max = }")
+print(f"{d3.min = }")
+
 

@@ -4,7 +4,7 @@ from dateutil.tz import gettz
 
 tzinfos = {
     'IST': gettz('Asia/Kolkata'),
-    'GMC': gettz('Europe/London'),
+    'GMT': gettz('Europe/London'),
     'AEST': gettz('Australia/Sydney'),
     'EST': gettz('US/Eastern'),
     'CST': gettz('America/Chicago'),
@@ -18,7 +18,7 @@ date_strings = [  # date strings to parse
     '5 AM April 2, 2021 AEST',
     '5 AM April 2, 2021 EST',
     '5 AM April 2, 2021 CST',
-    '5 AM April 2, 2021 GMC',
+    '5 AM April 2, 2021 GMT',
 ]
 
 for date_string in date_strings:
