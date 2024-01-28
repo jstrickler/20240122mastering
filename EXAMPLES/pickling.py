@@ -22,10 +22,15 @@ data = [  # list of data structures
     values,
 ]
 
+print("BEFORE:")
+pprint(data)
+print('-' * 60)
+
 with open('../TEMP/pickled_data.pic', 'wb') as pic_out:  # open pickle file for writing in binary mode
     pickle.dump(data, pic_out)  # serialize data structures to pickle file
 
 with open('../TEMP/pickled_data.pic', 'rb') as pic_in:  # open pickle file for reading in binary mode
     pickled_data = pickle.load(pic_in)  # de-serialize pickle file back into data structures
 
+print("AFTER:")
 pprint(pickled_data)  # view data structures

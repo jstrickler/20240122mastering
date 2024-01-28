@@ -5,7 +5,7 @@ from datetime import datetime
 
 TIMESTAMP = datetime.now().ctime()  # get a time string for the current date/time
 
-SENDER = 'jstrick@mindspring.com'
+SENDER = 'jstrickler@gmail.com'
 RECIPIENTS = ['jstrickler@gmail.com']
 MESSAGE_SUBJECT = 'Python SMTP example'
 

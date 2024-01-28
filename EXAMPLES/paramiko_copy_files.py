@@ -1,5 +1,4 @@
 import os
-import paramiko
 from paramiko import Transport, SFTPClient
 
 # In real life, don't hard-code password in script -- do one of these:

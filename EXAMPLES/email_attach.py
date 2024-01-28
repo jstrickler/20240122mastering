@@ -10,7 +10,7 @@ SMTP_PORT = 2525
 
 SMTP_USER = 'pythonclass'
 
-SENDER = 'jstrick@mindspring.com'
+SENDER = 'jstrickler@gmail.com'
 RECIPIENTS = ['jstrickler@gmail.com']
 
 

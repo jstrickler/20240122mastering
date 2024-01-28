@@ -3,8 +3,8 @@ import os
 from subprocess import run  # for running external PDF viewer
 import requests
 
-url = 'https://www.nasa.gov/pdf/739318main_ISS%20Utilization%20Brochure%202012%20Screenres%203-8-13.pdf'  # target URL
-saved_pdf_file = 'nasa_iss.pdf'  # name of PDF file for saving
+url = 'https://www.nasa.gov/wp-content/uploads/2021/12/sls_fact_sheet.pdf'  # target URL
+saved_pdf_file = 'nasa.pdf'  # name of PDF file for saving
 
 response = requests.get(url)  # open the URL
 if response.status_code == requests.codes.OK:  # check status code

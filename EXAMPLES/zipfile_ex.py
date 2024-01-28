@@ -9,6 +9,9 @@ tyger_text = zip_in.read('tyger.txt').decode()  # Read (raw binary) data from me
 print(tyger_text[:100], '\n')
 zip_in.extract('parrot.txt')  # Extract member
 
+info = zip_in.getinfo('spam.txt')
+print(info.CRC, info.comment, info.compress_size)
+
 # creating a zip file
 file_names = ["parrot.txt", "tyger.txt", "knights.txt", "alice.txt", "poe_sonnet.txt", "spam.txt"]
 zip_out = ZipFile("example.zip", mode="w", compression=ZIP_DEFLATED)  # Create new zip file

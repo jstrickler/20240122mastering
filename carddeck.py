@@ -9,7 +9,7 @@ class CardDeck:
         print("HELLO FROM CARDDECK CONSTRUCTOR")
         self._make_deck()
 
-    def _make_deck(self):
+    def _make_deck(self) -> None:
         self._cards = list()
         for suit in self.SUITS:
             for rank in self.RANKS:
@@ -31,10 +31,10 @@ class CardDeck:
         my_class = type(self)
         return f"{my_class.__name__}()"
     
-    def shuffle(self):
+    def shuffle(self) -> None:
         random.shuffle(self._cards)
 
-    def draw(self):
+    def draw(self) -> None:
         return self._cards.pop()
 
 if __name__ == "__main__":
